@@ -8,17 +8,12 @@ def get_symbol_info(symbol):
         
         # Fetch information for the modified symbol
         stock = yf.Ticker(lse_symbol)
+        hist = msft.history(period="1mo")
         
         # Display basic information
         print("Symbol:", lse_symbol)
         print("Name:", stock.info.get("shortName", "N/A"))
-        print("Exchange:", stock.info.get("exchange", "N/A"))
-        print("Industry:", stock.info.get("industry", "N/A"))
-        print("Sector:", stock.info.get("sector", "N/A"))
-        
-        # Display summary statistics
-        print("Market Cap:", stock.info.get("marketCap", "N/A"))
-        print("Previous Close Price:", stock.history(period="1d")["Close"].iloc[0])
+
         print("--------------------------------------------------------")
     except Exception as e:
         print(f"Error fetching information for {lse_symbol}: {str(e)}")
