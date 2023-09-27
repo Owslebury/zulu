@@ -8,7 +8,7 @@ def get_symbol_info(symbol):
         
         # Fetch information for the modified symbol
         stock = yf.Ticker(lse_symbol)
-        hist = msft.history(period="1mo")
+        hist = stock.history(period="1mo")
         
         # Display basic information
         print("Symbol:", lse_symbol)

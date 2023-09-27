@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3d6e5332-d2fb-441d-b08d-48519b7f53eb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>cups.py</StartupFile>
+    <StartupFile>eps.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
